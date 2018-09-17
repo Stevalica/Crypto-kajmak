@@ -36,6 +36,24 @@
 
 .right {
     width: 100vh - 60px;
-    margin-left: 200px;
-    height: 620px;
+    margin-left: 350px;
+    height: 600px;
+
+}
+.right-header {
+    
+    font-size: 30px;
+    width: 250px;
+    margin-left: 180px;
+    color:red;
+    
+}
+.right-body {
+    margin-top: 75px;
+}
+.right-body table tr th {
+    
+    width: 200px;
+    border: 2px solid black;
+
 }

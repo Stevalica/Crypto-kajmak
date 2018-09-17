@@ -7,7 +7,7 @@ import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { WelcomeComponent } from './home/welcome.component';
 import { CreateKajmakComponent } from './createKajmak/createKajmak.component';
-import { ListKajmakComponent } from './listKajmak/listKajma.component';
+import { ListKajmakComponent } from './listKajmak/listKajmak.component';
 import { MixKajmakComponent } from './mixKajmak/mixKajmak.component';
 
 @NgModule({
