@@ -1,5 +1,5 @@
 <div class="mainPage">
   {{mainPageTitle}}
   <router-outlet></router-outlet>
-  <button><span>Start </span></button>
+  <button [routerLink]="['/create']" *ngIf = 'showStartClick' (click)='hideButton()'><span>Start </span></button>
 </div>

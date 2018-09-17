@@ -1,0 +1,41 @@
+.listKajmakPage {
+    margin-top: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+    height: 620px;
+    background-color: #f4f4f4;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.menu {
+    width: 200px;
+    background-color: #eee;
+    position: fixed;
+    height: 620px;
+    opacity: 0.9;
+    border: solid black 1px;
+}
+
+.menu a {
+    color: black;
+    display: block;
+    height: 206px;
+    text-align: center;
+    line-height: 206px;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    background-color: #ccc;
+}
+
+.menu a.active {
+    background-color: #636065;
+    color: white;
+}
+
+.right {
+    width: 100vh - 60px;
+    margin-left: 200px;
+    height: 620px;
+}

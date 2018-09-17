@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  mainPageTitle = 'CryptoKajmak';
+  mainPageTitle: string = 'CryptoKajmak';
+  showStartClick: boolean = true;
+
+  hideButton(): void {
+    this.showStartClick = false;
+  }
 }
