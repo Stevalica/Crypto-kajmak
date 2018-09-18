@@ -7,24 +7,28 @@
     <div class="right">
         <form class="form">
             Name: <br>
-            <input type="text" name="name" required> <br>
+            <input type="text" name="name" [(ngModel)]="kajmak.name" required> <br>
             Milk from: <br>
-            <select>
+            <select name="milkfrom" [(ngModel)]="kajmak.milkfrom">
                 <option value="cow">Cow</option>
                 <option value="sheep">Sheep</option>
                 <option value="goat">Goat</option>
             </select> <br>
             Liters of milk:<br>
-            <input type="number" name="liters" min="1" max="100" required><br>
+            <input type="number" name="liters" [(ngModel)]="kajmak.liters" min="1" max="100" required><br>
             Type:<br>
-            <input type="radio" name="type" value="young" checked class="radioInput"> Young
-            <input type="radio" name="type" value="mature" checked class="radioInput"> Mature <br>
+            <select name="type" [(ngModel)]="kajmak.type">
+                <option value="young">Young</option>
+                <option value="mature">Mature</option>
+            </select>
             Salt: <br>
-            <input type="radio" name="salt" value="yes" checked class="radioInput"> Yes
-            <input type="radio" name="salt" value="no" class="radioInput"> No
+            <select name="salt" [(ngModel)]="kajmak.salt">
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
             <br>
             <br>
-            <input type="submit" value="CREATE" class="button">
+            <button class="button" (click)="CreateData()">CREATE</button>
         </form>
     </div>
 </div>
