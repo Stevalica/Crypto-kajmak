@@ -4,12 +4,12 @@
 1. otvoriti terminal
 2. pozicionirati se u folder repozitorija
 3. npm start
-4. server je pokrenut na stranici localhost:4200
+4. aplikacija je pokrenuta na stranici localhost:4200
 
 ##Pokretanje servera
 1. otvoriti novi terminal
 2. pozicionirati se u folder KajmakServer koji se nalazi unutar foldera repozitorija
-3. postaviti GOPATH i GOBIN:
+3. postaviti GOPATH i GOBIN:  
 		set GOPATH=C:\Users\mcaluk\Desktop\Crypto-kajmak\KajmakServer  
 		set GOBIN=C:\Users\mcaluk\Desktop\Crypto-kajmak\KajmakServer\bin  
 4. go run src/main/index.go
