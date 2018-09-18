@@ -39,3 +39,31 @@
     margin-left: 200px;
     height: 620px;
 }
+.right form text {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    
+    width: 300%;
+
+
+}
+.form input  {
+    width: 60%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    background-color: rgb(148, 255, 216);
+    color: black;
+}
+
+.formtwo input {
+    background-color:grey;
+    color: #242324;
+    width: 20% ;
+    border: black;
+    box-sizing: border-box;
+
+
+
+}

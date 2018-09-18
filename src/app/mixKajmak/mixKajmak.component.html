@@ -1,8 +1,22 @@
 <div class="mixKajmakPage">
-        <div class="menu">
-            <a [routerLink]="['/create']">Create Kajmak</a>
-            <a [routerLink]="['/list']">List Kajmak </a>
-            <a class="active"[routerLink]="['/mix']">Mix Kajmak</a>
-        </div>
-        <div class="right">hjhk</div>
+    <div class="menu">
+        <a [routerLink]="['/create']">Create Kajmak</a>
+        <a [routerLink]="['/list']">List Kajmak </a>
+        <a class="active" [routerLink]="['/mix']">Mix Kajmak</a>
     </div>
+    <div class="right">
+        <form class="form">
+            <br> First Kajmak: <br>
+            <input type="text" name="name" required placeholder="Type here first name"> <br> Second Kajmak: <br>
+            <input type="text" name="name" required placeholder="Type here second name"> <br>
+        </form>
+        <br>
+        <br>
+        <form class="formtwo">
+            <input type="submit" value="Mix">
+            <input type="reset" value="Reset">
+
+        </form>
+
+    </div>
+</div>

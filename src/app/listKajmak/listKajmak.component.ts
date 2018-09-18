@@ -1,11 +1,14 @@
 import { Component } from "@angular/core";
 
 @Component({
+    selector: 'app-listcomponent',
     templateUrl: './listKajmak.component.html',
     styleUrls: ['./listKajmak.component.css']
 })
 export class ListKajmakComponent {
     pageTitle: string = 'Product List';
+    imageWidth: number = 50;
+    imageMargin: number = 2;
 
     products: any[] = [
         {

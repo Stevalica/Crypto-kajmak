@@ -11,22 +11,32 @@
 
         </div>
 
-        
-        <div class="right-body">
-             <table>
-                 <tr>
-                     <th>Image</th>
-                     <th>Name</th>
-                     <th>Price</th>
-                     <th>Exp. Date</th>
-                 </tr>
+        <table class="table">
 
-             </table>
-        </div>
+            <thead style="background-color: aquamarine">
+                <tr>
+
+                    <th>Image</th>
+                    <th>Product</th>
+                    <th>Exp Date</th>
+                    <th>Price</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor='let product of products'>
+                    <td>
+                        <img [src]='product.imageUrl' [title]='product.productName' [style.width.px]='imageWidth' [style.margin.px]='imageMargin'>
+                    </td>
+                    <td>{{ product.productName }}</td>
+                    <td>{{ product.expDate }}</td>
+                    <td>{{ product.price | currency: 'USD' : 'symbol' : '1.2-2'}}</td>
 
 
+                </tr>
+            </tbody>
 
+        </table>
 
     </div>
-
 </div>
