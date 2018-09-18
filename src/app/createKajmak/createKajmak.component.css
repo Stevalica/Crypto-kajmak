@@ -38,11 +38,44 @@
     width: 100vh - 60px;
     margin-left: 200px;
     height: 620px;
+    padding-top: 80px;
 }
 
 .form {
-    border: solid black 1px;
+    color: #b5b4bb;
+    width: 30%;
+    margin: 0 auto;
+    padding: 15px;
+    background-color: #7a777d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+input, select {
     font-size: 20px;
-    text-align: left;
-    width: 300px;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 2px;
+    color: black;
+    background-color: #eaeaea;
+}
+
+.button {
+    width: 70%;
+    background-color: #9e9da2;
+    border: none;
+    color: black;
+    transition: all 0.5s;
+    cursor: pointer;
+    height: 50px;
+}
+
+.button:hover {
+    color: white;
+    background-color: #636065
+}
+
+.radioInput {
+    width: 10%;
+    background-color: #7a777d;
 }
