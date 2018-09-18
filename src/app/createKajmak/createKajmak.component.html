@@ -4,5 +4,27 @@
         <a [routerLink]="['/list']">List Kajmak </a>
         <a [routerLink]="['/mix']">Mix Kajmak</a>
     </div>
-    <div class="right">hjhk</div>
+    <div class="right">
+        <form class="form">
+            Name: <br>
+            <input type="text" name="name" required> <br>
+            Milk from: <br>
+            <select>
+                <option value="cow">Cow</option>
+                <option value="sheep">Sheep</option>
+                <option value="goat">Goat</option>
+            </select> <br>
+            Liters of milk:<br>
+            <input type="number" name="liters" min="1" max="100" required><br>
+            Type:<br>
+            <input type="radio" name="type" value="young" checked> Young
+            <input type="radio" name="type" value="mature" checked> Mature <br>
+            Salt: <br>
+            <input type="radio" name="salt" value="yes" checked> Yes
+            <input type="radio" name="salt" value="no"> No
+            <br>
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
 </div>
