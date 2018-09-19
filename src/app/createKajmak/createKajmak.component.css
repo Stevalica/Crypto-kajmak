@@ -72,5 +72,6 @@ input, select {
 
 .button:hover {
     color: white;
-    background-color: #636065
+    background-color: #636065;
+    font-weight: bold;
 }

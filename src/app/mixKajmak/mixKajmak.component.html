@@ -6,17 +6,17 @@
     </div>
     <div class="right">
         <form class="form">
-            <br> First Kajmak: <br>
-            <input type="text" name="name" required placeholder="Type here first name"> <br> Second Kajmak: <br>
-            <input type="text" name="name" required placeholder="Type here second name"> <br>
+            Choose First Kajmak:<br>
+            <select>
+                <option *ngFor="let product of products">{{ product.name }}</option>
+            </select><br>
+            Choose Second Kajmak:<br>
+            <select>
+                <option *ngFor="let product of products">{{ product.name }}</option>
+            </select>
+            <br>
+            <br>
+            <button class="button" (click)="MixKajmak()">Mix</button>
         </form>
-        <br>
-        <br>
-        <form class="formtwo">
-            <input type="submit" value="Mix">
-            <input type="reset" value="Reset">
-
-        </form>
-
     </div>
 </div>

@@ -38,32 +38,41 @@
     width: 100vh - 60px;
     margin-left: 200px;
     height: 620px;
+    padding-top: 150px;
 }
-.right form text {
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    
-    width: 300%;
 
-
+.form {
+    color: #b5b4bb;
+    width: 30%;
+    margin: 0 auto;
+    padding: 15px;
+    background-color: #7a777d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.form input  {
-    width: 60%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    border: none;
-    background-color: rgb(148, 255, 216);
+
+select {
+    font-size: 20px;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 2px;
     color: black;
+    background-color: #eaeaea;
 }
 
-.formtwo input {
-    background-color:grey;
-    color: #242324;
-    width: 20% ;
-    border: black;
-    box-sizing: border-box;
+.button {
+    width: 70%;
+    background-color: #9e9da2;
+    border: none;
+    color: black;
+    transition: all 0.5s;
+    cursor: pointer;
+    height: 50px;
+    text-transform: uppercase;
+}
 
-
-
+.button:hover {
+    color: white;
+    background-color: #636065;
+    font-weight: bold;
 }
