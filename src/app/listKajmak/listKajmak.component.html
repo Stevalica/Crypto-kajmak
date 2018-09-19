@@ -5,38 +5,25 @@
         <a [routerLink]="['/mix']">Mix Kajmak</a>
     </div>
     <div class="right">
-
-        <div class="right-header">
-            {{pageTitle}}
-
-        </div>
-
-        <table class="table">
-
-            <thead style="background-color: aquamarine">
+        <table class="table" border="1">
+            <thead>
                 <tr>
-
-                    <th>Image</th>
-                    <th>Product</th>
-                    <th>Exp Date</th>
-                    <th>Price</th>
-
+                    <th>Name</th>
+                    <th>Milk From</th>
+                    <th>Quantity</th>
+                    <th>Type</th>
+                    <th>Salt</th>
                 </tr>
             </thead>
             <tbody>
-                <tr *ngFor='let product of products'>
-                    <td>
-                        <img [src]='product.imageUrl' [title]='product.productName' [style.width.px]='imageWidth' [style.margin.px]='imageMargin'>
-                    </td>
-                    <td>{{ product.productName }}</td>
-                    <td>{{ product.expDate }}</td>
-                    <td>{{ product.price | currency: 'USD' : 'symbol' : '1.2-2'}}</td>
-
-
+                <tr *ngFor="let product of products">
+                    <td>{{ product.name }}</td>
+                    <td>{{ product.milkfrom }}</td>
+                    <td>{{ product.liters*40}}</td>
+                    <td>{{ product.type }}</td>
+                    <td>{{ product.salt }}</td>
                 </tr>
             </tbody>
-
         </table>
-
     </div>
 </div>

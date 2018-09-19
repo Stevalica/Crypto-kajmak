@@ -1,42 +1,37 @@
-import { Component } from "@angular/core";
-
+import { Component, OnInit } from "@angular/core";
+import { Http } from "@angular/http";
+import 'rxjs/add/operator/map';
+import { Location } from "@angular/common";
+import { Router } from "@angular/router";
+import { selectOrCreateRenderHostElement } from "@angular/core/src/linker/view_utils";
+ 
 @Component({
     selector: 'app-listcomponent',
     templateUrl: './listKajmak.component.html',
     styleUrls: ['./listKajmak.component.css']
 })
-export class ListKajmakComponent {
-    pageTitle: string = 'Product List';
-    imageWidth: number = 50;
-    imageMargin: number = 2;
+export class ListKajmakComponent implements OnInit {
+    public products: any;
 
-    products: any[] = [
-        {
-            'productID': 1,
-            'productName': 'Kajmak1',
-            'expDate': 'Okt 25, 2018',
-            'price': 5.00,
-            'imageUrl': '',
-            'description': '',
+    public constructor(private http: Http, private router: Router, private location: Location) {
+        this.products = [];
+    }
 
-        },
-        {
-            'productID': 2,
-            'productName': 'Kajmak2',
-            'expDate': 'Okt 27, 2018',
-            'price': 7.00,
-            'imageUrl': '',
-            'description': '',
-        },
-        {
-            'productID': 3,
-            'productName': 'Kajmak3',
-            'expDate': 'Okt 11, 2018',
-            'price': 2.00,
-            'imageUrl': '',
-            'description': '',
-        },
-    ];
+    public ngOnInit() {
+        this.location.subscribe(() => {
+            this.getProducts();
+        });
+        this.getProducts();
+    }
 
-
+    private getProducts() {
+        console.log("Pozvano");
+        this.http.get("http://localhost:3000/group")
+            .map(result => result.json())
+            .subscribe(result => {
+                console.log(result);
+                this.products = result;
+                console.log(this.products);
+        });
+    }
 }

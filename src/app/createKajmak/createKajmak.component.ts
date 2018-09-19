@@ -1,6 +1,5 @@
 import { Component } from "@angular/core";
 import { Http } from "@angular/http";
-import { Location } from "@angular/common";
 
 @Component({
     templateUrl: './createKajmak.component.html',
@@ -9,7 +8,7 @@ import { Location } from "@angular/common";
 export class CreateKajmakComponent {
     public kajmak: any;
 
-    public constructor(private location: Location,private http: Http) {
+    public constructor(private http: Http) {
         this.kajmak = {
             "name": "",
             "milkfrom": "",
@@ -21,7 +20,7 @@ export class CreateKajmakComponent {
     public CreateData() {
         console.log(this.kajmak);
         //post salje od aplikacije do http klijent servisa
-        //nakon sto se subscripte, http lijent servis salje na server
+        //nakon sto se subscribe, http klijent servis salje na server
         this.http.post("http://localhost:3000/create", JSON.stringify(this.kajmak)).subscribe(results => {
             //odgovor od servera 
             console.log("U redu");
